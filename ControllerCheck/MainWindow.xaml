@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControllerCheck"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ControllerTester" Width="477.356" Height="187.314">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
     <Grid>
-        
+        <Label Content="{Binding XRotation}" HorizontalAlignment="Left" Margin="126,33,0,0" Height="26" VerticalAlignment="Top" Width="99" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="{Binding YRotation}" HorizontalAlignment="Left" Margin="126,107,0,0" Height="26" VerticalAlignment="Top" Width="99" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="{Binding X}" HorizontalAlignment="Left" Margin="327,33,0,0" Height="26" VerticalAlignment="Top" Width="99" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="{Binding Y}" HorizontalAlignment="Left" Margin="327,108,0,0" Height="26" VerticalAlignment="Top" Width="99" BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="XRotation" HorizontalAlignment="Left" Margin="64,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="YRotation" HorizontalAlignment="Left" Margin="64,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="310,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Y" HorizontalAlignment="Left" Margin="310,108,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
